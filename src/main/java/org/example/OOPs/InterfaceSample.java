@@ -1,4 +1,7 @@
 package org.example.OOPs;
+
+import java.util.List;
+
 interface Animal{
     void eat();
     void makeSound();
