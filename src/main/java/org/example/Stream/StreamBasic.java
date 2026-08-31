@@ -13,7 +13,7 @@ public class StreamBasic {
         );
         list1.stream().flatMap(x->x.stream())
                         .forEach(System.out::println);
-        list.stream().filter(x->x>2)
-                .map(x->x*2).sorted().forEach(System.out::println);
+        list.stream().filter(x->x>2).
+                peek(System.out::println).map(x->x*2).sorted().forEach(System.out::println);
     }
 }
